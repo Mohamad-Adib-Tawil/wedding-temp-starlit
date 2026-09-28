@@ -16,7 +16,7 @@
       const english = document.createElement("span"); english.className = "couple__latin"; english.dir = "ltr"; english.textContent = person.en;
       node.append(english);
     });
-    setText("#coverMono", `${config.couple.groom.ar}  &  ${config.couple.bride.ar}`);
+    setText("#coverMono", config.texts.coverSymbol);
     setText("#heroDate", `${config.event.dateText} • ${config.event.timeText}`);
     setText("#verseText", config.texts.verse);
     setText("#invitationText", config.texts.invitation);
@@ -34,6 +34,10 @@
     setText("#calDay", config.event.dayText);
     setText("#calTime", config.event.timeText);
     document.title = `${config.texts.title} ${config.couple.groom.ar} & ${config.couple.bride.ar}`;
+    $("#metaDescription").content = config.texts.metaDescription;
+    $("#ogTitle").content = document.title;
+    $("#ogDescription").content = config.texts.metaDescription;
+    $$('[data-aria]').forEach((node) => node.setAttribute("aria-label", text(node.dataset.aria)));
     $("#fontCss").href = config.links.fonts;
     $("#ogImage").content = new URL(config.assets.share, location.href).href;
     const map = $("#mapBtn"); map.href = config.venue.mapUrl;

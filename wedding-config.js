@@ -17,6 +17,13 @@ window.WEDDING_CONFIG = {
   },
   texts: {
     title: "دعوة زفاف",
+    coverSymbol: "&",
+    metaDescription: "حضوركم يزيّن فرحتنا. نراكم تحت النجوم.",
+    remainingTimeLabel: "الوقت المتبقّي",
+    decreaseGuests: "إنقاص العدد",
+    increaseGuests: "زيادة العدد",
+    whatsappLabel: "واتساب",
+    musicLabel: "الموسيقى",
     coverHint: "اضغط لتُضيء النجوم",
     bismillah: "بسم الله الرحمن الرحيم",
     occasion: "حفل زفاف",
@@ -58,7 +65,6 @@ window.WEDDING_CONFIG = {
     order: "اطلبه 🎉",
     orderPrompt: "أعجبك قالب «تحت النجوم»؟",
     orderSubtext: "اطلب دعوتك عبر واتساب",
-    musicLabel: "الموسيقى",
     openInvite: "افتح الدعوة",
     mapLabel: "الموقع على الخريطة",
     countdown: { days: "يوم", hours: "ساعة", minutes: "دقيقة", seconds: "ثانية" },
@@ -94,7 +100,7 @@ window.WEDDING_CONFIG = {
   links: {
     whatsapp: "https://wa.me/+963992688759",
     googleCalendarBase: "https://calendar.google.com/calendar/render?action=TEMPLATE",
-    invitationUrl: "https://halaheel.com/d/demo-starlit",
+    invitationUrl: "https://mohamad-adib-tawil.github.io/wedding-temp-starlit/",
     fonts: "https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=El+Messiri:wght@400;500;600;700&family=Amiri:ital@0;1&family=Tajawal:wght@300;400;500;700&display=swap",
   },
   assets: {
