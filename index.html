@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a1024">
+  <meta name="description" content="دعوة زفاف محمد أديب طويل ورزان بطايحي">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="دعوة زفاف محمد أديب طويل ورزان بطايحي">
+  <meta property="og:description" content="نراكم تحت النجوم">
+  <meta property="og:image" id="ogImage" content="">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>دعوة زفاف محمد أديب طويل &amp; رزان بطايحي</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link id="fontCss" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="extras.css">
+  <script src="wedding-config.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="sky" aria-hidden="true"></div>
+  <div class="stars" id="stars" aria-hidden="true"></div>
+  <div class="shooting" id="shooting" aria-hidden="true"></div>
+  <div class="cover" id="cover">
+    <div class="bg-photo" id="coverBg" aria-hidden="true"></div>
+    <div class="cover__center" id="coverCenter">
+      <span class="cover__star" aria-hidden="true">✦</span>
+      <p class="cover__label" data-text="title"></p>
+      <div class="cover__mono" id="coverMono"></div>
+      <button class="cover__btn" id="openBtn" type="button" data-text="openInvite"></button>
+      <p class="cover__hint" data-text="coverHint"></p>
+    </div>
+  </div>
+  <main class="invite" id="invite" aria-hidden="true">
+    <header class="section hero">
+      <div class="stage-bg" id="stageBg" aria-hidden="true"></div>
+      <svg class="constellation" id="constellation" viewBox="0 0 200 180" aria-hidden="true"><path class="cline" id="cline" fill="none"></path><g class="cstars" id="cstars"></g></svg>
+      <div class="hero__inner">
+        <span class="orn reveal-up" aria-hidden="true">✦</span>
+        <p class="bismillah reveal-up" data-text="bismillah"></p>
+        <p class="kicker reveal-up" data-text="occasion"></p>
+        <h1 class="couple">
+          <span class="couple__name reveal-up" id="groomName"></span>
+          <span class="couple__amp reveal-up" aria-hidden="true">&amp;</span>
+          <span class="couple__name reveal-up" id="brideName"></span>
+        </h1>
+        <p class="hero__date reveal-up" id="heroDate"></p>
+        <span class="scroll-cue reveal-up" aria-hidden="true"><span class="scroll-cue__txt" data-text="scroll"></span><span class="scroll-cue__arrow">↓</span></span>
+      </div>
+    </header>
+    <section class="section verse reveal"><div class="gdivider" aria-hidden="true"><i></i><span>✦</span><i></i></div><p class="verse__text" id="verseText"></p></section>
+    <section class="section invitation reveal"><h2 class="section__title" data-text="invitationHeading"></h2><p class="invitation__text" id="invitationText"></p></section>
+    <section class="section families reveal">
+      <div class="family"><span class="family__label" data-text="groomParentsLabel"></span><p class="family__names" id="groomParents"></p></div>
+      <span class="families__heart" aria-hidden="true">❤</span>
+      <div class="family"><span class="family__label" data-text="brideParentsLabel"></span><p class="family__names" id="brideParents"></p></div>
+    </section>
+    <section class="section when reveal"><h2 class="section__title" data-text="countdownHeading"></h2><div class="countdown" id="countdown" role="timer" aria-label="الوقت المتبقّي">
+      <div class="cd__cell"><span class="cd__num" id="cdDays">00</span><span class="cd__lbl" data-text="countdown.days"></span></div>
+      <div class="cd__cell"><span class="cd__num" id="cdHours">00</span><span class="cd__lbl" data-text="countdown.hours"></span></div>
+      <div class="cd__cell"><span class="cd__num" id="cdMins">00</span><span class="cd__lbl" data-text="countdown.minutes"></span></div>
+      <div class="cd__cell"><span class="cd__num" id="cdSecs">00</span><span class="cd__lbl" data-text="countdown.seconds"></span></div>
+    </div><p class="when__arrived" id="cdArrived" hidden data-text="countdownArrived"></p></section>
+    <section class="section program reveal"><h2 class="section__title" data-text="programHeading"></h2><ul class="timeline" id="timeline"></ul></section>
+    <section class="section venue reveal"><h2 class="section__title" data-text="venueHeading"></h2><div class="venue__photo" id="venuePhoto" aria-hidden="true"><span class="venue__pin">⚲</span></div><p class="when__date" id="weddingDate"></p><p class="when__time" id="weddingTime"></p><p class="venue__name" id="venueName"></p><p class="venue__addr" id="venueAddr"></p><a class="venue__btn" id="mapBtn" target="_blank" rel="noopener"><span aria-hidden="true">⚲</span><span data-text="mapLabel"></span></a></section>
+    <section class="section notes reveal"><h2 class="section__title" data-text="notesHeading"></h2><ul class="notes__list" id="notesList"></ul></section>
+    <footer class="section closing reveal"><div class="gdivider" aria-hidden="true"><i></i><span>✦</span><i></i></div><p class="closing__note" id="closingNote"></p><p class="closing__hashtag" id="closingHashtag"></p><div class="contact" id="contactBox"><span class="contact__label" data-text="contactLabel"></span><a class="contact__link" id="contactLink" target="_blank" rel="noopener"></a></div><p class="closing__families" id="closingFamilies"></p><p class="closing__thanks" data-text="closingThanks"></p><span class="orn" aria-hidden="true">✦</span></footer>
+    <section id="da3wa-mem" dir="rtl"><span class="mem-orn">✦</span><p class="mem-title" data-text="galleryHeading"></p><div class="mem-grid n4" id="gallery"></div></section>
+    <section id="da3wa-cal" dir="rtl"><p class="cal-title" data-text="calendarHeading"></p><div class="cal"><div class="cal-top" id="calMonth"></div><div class="cal-body"><div class="cal-wd" id="calWeekday"></div><div class="cal-day" id="calDay"></div><div class="cal-time" id="calTime"></div></div><div class="cal-foot"><p class="cal-cap" data-text="calendarCaption"></p><div class="cal-btns"><a id="googleCalendar" target="_blank" rel="noopener" data-text="googleCalendar"></a><a id="appleCalendar" download="wedding-invitation.ics" data-text="appleCalendar"></a></div></div></div></section>
+    <section id="da3wa-rsvp" dir="rtl"><div class="rsvp-card" id="da3wa-rsvp-card"><div class="orn-line" aria-hidden="true"><i></i><b>✨</b><i></i></div><h3 data-text="rsvpHeading"></h3><p class="sub" data-text="rsvpSubheading"></p><form id="rsvpForm"><label for="guestName" data-text="guestNameLabel"></label><input id="guestName" name="guest_name" required maxlength="80" data-placeholder="guestNamePlaceholder"><label data-text="attendanceLabel"></label><div class="pills" id="attendance"><button type="button" class="pill" data-value="yes" aria-pressed="true" data-text="yes"></button><button type="button" class="pill" data-value="no" aria-pressed="false" data-text="no"></button><button type="button" class="pill" data-value="maybe" aria-pressed="false" data-text="maybe"></button></div><label for="companions" data-text="companionsLabel"></label><div class="step"><button type="button" id="minus" aria-label="إنقاص العدد">−</button><span id="companions">0</span><button type="button" id="plus" aria-label="زيادة العدد">+</button></div><label for="rsvpMessage" data-text="messageLabel"></label><textarea id="rsvpMessage" name="message" rows="2" maxlength="300" data-placeholder="messagePlaceholder"></textarea><button class="send" type="submit" data-text="submitRsvp"></button></form></div><div class="wishes" id="wishes"><div class="wishes-h"><h3 data-text="wishesHeading"></h3></div><div class="wish-list" id="wishList"></div></div></section>
+  </main>
+  <div id="da3wa-yt" aria-hidden="true"></div>
+  <button id="da3wa-music" type="button" aria-label="الموسيقى" title="الموسيقى">🔇</button>
+  <aside id="da3wa-democta" dir="rtl"><div class="dc-txt"><span data-text="orderPrompt"></span><small data-text="orderSubtext"></small></div><a class="dc-order" id="orderLink" target="_blank" rel="noopener" data-text="order"></a><a class="dc-wa" id="stickyWhatsApp" target="_blank" rel="noopener" aria-label="واتساب">✆</a></aside>
+</body>
+</html>
